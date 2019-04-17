@@ -1,11 +1,13 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: debian:stretch
+    machine: true
 
     steps:
       - checkout
+
+      - setup_remote_docker:   # (2)
+          docker_layer_caching: true # (3)
 
       - run:
           name: Greeting
