@@ -1,4 +1,4 @@
-version: "3.4"
+version: "3.2"
 # Each service has its image built on the respective repository found at hub.docker. There is no need to build any 
 # of the images as they will be pulled from the hub if you don't have it cached locally.
 services:
