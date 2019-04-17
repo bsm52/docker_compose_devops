@@ -1,0 +1,32 @@
+version: "3.4"
+# Each service has its image built on the respective repository found at hub.docker. There is no need to build any 
+# of the images as they will be pulled from the hub if you don't have it cached locally.
+services:
+ #My Centos Image
+ centos:
+  image: bsm52/centos:7.3.1611
+  command: bash -c 'cd ./2048.c; ./2048'
+ #My Ubuntu 18.04 Image
+ ubuntu_18.04: 
+  image: bsm52/ubuntu:18.04
+  command: bash -c 'cd ./2048.c; ./2048'
+ #My Ubuntu 18.10 Image
+ ubuntu_18.10:
+  image: bsm52/ubuntu:18.10
+  command: bash -c 'cd ./2048.c; ./2048'
+ #My Ubuntu 19.04 Image
+ ubuntu_19.04:
+  image: bsm52/ubuntu:19.04
+  command: bash -c 'cd ./2048.c; ./2048'
+ #My Ubuntu 14.04 Image
+ ubuntu_14.04:
+  image: bsm52/ubuntu:14.04
+  command: bash -c 'cd ./2048.c; ./2048'
+ #My Ubuntu 16.04 Image
+ ubuntu_16.04:
+  image: bsm52/ubuntu:16.04
+  command: bash -c 'cd ./2048.c; ./2048'
+ #opensuse image
+ opensuse:
+  image: bsm52/opensuse:latest
+  command: bash -c 'cd ./2048.c; ./2048'
